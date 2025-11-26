@@ -58,7 +58,7 @@ const Navigation = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-foreground hover:text-primary transition-colors duration-300"
+                className="text-white hover:text-primary transition-colors duration-300"
               >
                 {item.label}
               </a>
@@ -87,7 +87,7 @@ const Navigation = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="block py-2 text-foreground hover:text-primary transition-colors duration-300"
+                className="block py-2 text-white hover:text-primary transition-colors duration-300"
               >
                 {item.label}
               </a>
