@@ -19,21 +19,21 @@ const Hero = () => {
     >
       <div className="container mx-auto px-4 text-center z-10">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white animate-fade-in">
-          Hi, I'm <span className="text-gradient">Your Name</span>
+          Hi, I'm <span className="text-gradient">Yiling Shi</span>
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          Full Stack Developer & Creative Problem Solver
+          PhD Student in Psychosis Research
         </p>
         <p className="text-lg text-white/80 mb-12 max-w-xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          Crafting beautiful, functional web experiences with modern technologies
+          Advancing understanding of psychotic disorders through innovative research
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
           <Button 
             size="lg" 
-            onClick={() => scrollToSection("projects")}
+            onClick={() => scrollToSection("research")}
             className="bg-primary hover:bg-primary-glow text-primary-foreground shadow-elegant"
           >
-            View My Work
+            View My Research
           </Button>
           <Button 
             size="lg" 

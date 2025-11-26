@@ -1,22 +1,22 @@
-import { Code2, Palette, Zap } from "lucide-react";
+import { Brain, BookOpen, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const About = () => {
   const highlights = [
     {
-      icon: Code2,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable solutions with best practices",
+      icon: Brain,
+      title: "Research Focus",
+      description: "Investigating mechanisms and interventions in psychotic disorders",
     },
     {
-      icon: Palette,
-      title: "Design Focus",
-      description: "Creating beautiful interfaces that users love to interact with",
+      icon: BookOpen,
+      title: "Evidence-Based",
+      description: "Conducting rigorous studies to advance clinical understanding",
     },
     {
-      icon: Zap,
-      title: "Performance",
-      description: "Optimizing for speed and efficiency in every project",
+      icon: Users,
+      title: "Collaborative",
+      description: "Working with interdisciplinary teams to improve patient outcomes",
     },
   ];
 
@@ -27,8 +27,8 @@ const About = () => {
           About <span className="text-gradient">Me</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16 text-lg">
-          I'm a passionate developer dedicated to building exceptional digital experiences.
-          With a strong foundation in modern web technologies, I transform ideas into reality.
+          I'm a dedicated PhD student focused on understanding psychotic disorders through rigorous research.
+          My work aims to contribute to better diagnosis, treatment, and support for individuals with psychosis.
         </p>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

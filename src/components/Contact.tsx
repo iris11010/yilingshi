@@ -17,9 +17,9 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
-    { icon: Linkedin, href: "https://linkedin.com/in/yourprofile", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com/yourusername", label: "GitHub" },
+    { icon: Mail, href: "mailto:yiling.shi@university.edu", label: "Email" },
+    { icon: Linkedin, href: "https://linkedin.com/in/yiling-shi", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/yilingshi", label: "GitHub" },
   ];
 
   return (
@@ -29,7 +29,7 @@ const Contact = () => {
           Get In <span className="text-gradient">Touch</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16 text-lg">
-          Have a project in mind or want to collaborate? Let's create something amazing together
+          Interested in collaboration or have questions about my research? Feel free to reach out
         </p>
 
         <div className="max-w-2xl mx-auto">
@@ -54,7 +54,7 @@ const Contact = () => {
                 <Input 
                   id="email" 
                   type="email" 
-                  placeholder="your.email@example.com" 
+                  placeholder="your.email@institution.edu" 
                   required 
                   className="bg-background"
                 />
@@ -66,7 +66,7 @@ const Contact = () => {
                 </label>
                 <Textarea 
                   id="message" 
-                  placeholder="Tell me about your project..." 
+                  placeholder="Your message or inquiry..." 
                   required 
                   rows={5}
                   className="bg-background"

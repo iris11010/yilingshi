@@ -17,7 +17,7 @@ const Navigation = () => {
   const navItems = [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
+    { label: "Research", href: "#research" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -43,7 +43,7 @@ const Navigation = () => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            YN
+            YS
           </a>
 
           {/* Desktop Navigation */}

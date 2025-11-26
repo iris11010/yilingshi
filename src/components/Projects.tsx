@@ -1,37 +1,37 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack online store with payment integration, user authentication, and admin dashboard",
-      tags: ["React", "Node.js", "Stripe", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+      title: "Cognitive Deficits in Early Psychosis",
+      description: "Investigating cognitive impairments in first-episode psychosis patients and their impact on functional outcomes",
+      tags: ["Clinical Study", "Neuropsychology", "Longitudinal Design"],
+      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates and team features",
-      tags: ["Next.js", "TypeScript", "PostgreSQL", "WebSockets"],
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+      title: "Treatment Response Predictors",
+      description: "Analyzing biomarkers and clinical factors that predict response to antipsychotic medications",
+      tags: ["Data Analysis", "Pharmacology", "Predictive Modeling"],
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
     },
     {
-      title: "Portfolio Website",
-      description: "Modern, responsive portfolio with smooth animations and optimized performance",
-      tags: ["React", "Tailwind CSS", "Framer Motion"],
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
+      title: "Social Functioning Interventions",
+      description: "Evaluating effectiveness of psychosocial interventions on social outcomes in schizophrenia",
+      tags: ["RCT", "Intervention Study", "Quality of Life"],
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
     },
   ];
 
   return (
-    <section id="projects" className="section-padding bg-gradient-to-b from-secondary/30 to-background">
+    <section id="research" className="section-padding bg-gradient-to-b from-secondary/30 to-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-          Featured <span className="text-gradient">Projects</span>
+          Research <span className="text-gradient">Projects</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16 text-lg">
-          A selection of my recent work and personal projects
+          Current and recent research in psychosis and related disorders
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -64,11 +64,11 @@ const Projects = () => {
                 <div className="flex gap-3">
                   <Button size="sm" variant="outline" className="flex items-center gap-2">
                     <ExternalLink size={16} />
-                    Demo
+                    Publication
                   </Button>
                   <Button size="sm" variant="outline" className="flex items-center gap-2">
-                    <Github size={16} />
-                    Code
+                    <ExternalLink size={16} />
+                    Details
                   </Button>
                 </div>
               </div>
