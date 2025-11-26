@@ -6,13 +6,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const Publications = () => {
   const articles = [
     {
-      title: "A single dose of cannabidiol modulates hippocampal glutamate–prefrontal coupling in individuals at clinical high risk of psychosis",
-      authors: "Shi, Y. et al.",
-      journal: "Under Revision",
+      title: "A single dose of cannabidiol modulates the relationship between hippocampal glutamate and learning-related prefrontal activation in individuals at Clinical High Risk of Psychosis",
+      authors: "Shi, Y., Davies, C., Wilson, R., Appiah-Kusi, E., Lythgoe, D.J., Modinos, G., & Bhattacharyya, S.",
+      journal: "Psychiatry Research: Neuroimaging",
       year: "2025",
-      volume: "Preprint",
-      pages: "",
-      doi: "10.1101/2024.11.06.24316831",
+      volume: "In Press",
+      pages: "112095",
+      doi: "10.1016/j.pscychresns.2025.112095",
     },
     {
       title: "The effect of cannabinoids on cognition: A Bayesian meta-analysis",
@@ -131,7 +131,7 @@ const Publications = () => {
                       onClick={() => window.open(`https://doi.org/${article.doi}`, '_blank')}
                     >
                       <ExternalLink size={16} />
-                      {article.doi.includes('10.1101') ? 'Preprint' : 'DOI'}
+                      {article.volume === "In Press" ? 'View Article' : 'DOI'}
                     </Button>
                   )}
                   {!article.doi && (
