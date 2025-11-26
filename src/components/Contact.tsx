@@ -18,8 +18,8 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Mail, href: "mailto:yiling.shi@kcl.ac.uk", label: "Email" },
-    { icon: Linkedin, href: "https://linkedin.com/in/yiling-shi", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com/yilingshi", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/yiling-%E4%BE%9D%E7%81%B5-shi-%E7%9F%B3-b09857245/", label: "LinkedIn" },
+    { icon: Github, href: "https://twitter.com/Yiling.shi", label: "X (Twitter)" },
   ];
 
   return (
