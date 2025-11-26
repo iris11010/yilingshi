@@ -5,18 +5,18 @@ const About = () => {
   const highlights = [
     {
       icon: Brain,
-      title: "Research Focus",
-      description: "Investigating mechanisms and interventions in psychotic disorders",
+      title: "Neuroimaging",
+      description: "Multimodal integration of fMRI, MRS, and behavioural data",
     },
     {
       icon: BookOpen,
-      title: "Evidence-Based",
-      description: "Conducting rigorous studies to advance clinical understanding",
+      title: "Meta-Analysis",
+      description: "Bayesian hierarchical models and machine learning approaches",
     },
     {
       icon: Users,
-      title: "Collaborative",
-      description: "Working with interdisciplinary teams to improve patient outcomes",
+      title: "Clinical Research",
+      description: "Focus on cannabinoids and cognition in psychosis",
     },
   ];
 
@@ -27,8 +27,8 @@ const About = () => {
           About <span className="text-gradient">Me</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16 text-lg">
-          I'm a dedicated PhD student focused on understanding psychotic disorders through rigorous research.
-          My work aims to contribute to better diagnosis, treatment, and support for individuals with psychosis.
+          I'm a PhD candidate at King's College London investigating how cannabinoids affect cognition in psychosis.
+          My research combines neuroimaging, computational modelling, and meta-analytic approaches to understand these mechanisms.
         </p>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

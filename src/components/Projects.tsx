@@ -5,21 +5,21 @@ import { ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Cognitive Deficits in Early Psychosis",
-      description: "Investigating cognitive impairments in first-episode psychosis patients and their impact on functional outcomes",
-      tags: ["Clinical Study", "Neuropsychology", "Longitudinal Design"],
+      title: "Cannabidiol and Hippocampal-Prefrontal Coupling in Psychosis",
+      description: "Investigating how a single dose of CBD modulates brain connectivity in individuals at clinical high risk of psychosis using multimodal neuroimaging",
+      tags: ["fMRI", "1H-MRS", "Clinical High Risk", "Hippocampus"],
       image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
     },
     {
-      title: "Treatment Response Predictors",
-      description: "Analyzing biomarkers and clinical factors that predict response to antipsychotic medications",
-      tags: ["Data Analysis", "Pharmacology", "Predictive Modeling"],
+      title: "Bayesian Meta-Analysis of Cannabinoid Effects on Cognition",
+      description: "Comprehensive meta-analysis across 45 THC and 17 CBD RCTs using Bayesian hierarchical models and machine learning to identify moderators of cognitive effects",
+      tags: ["Meta-Analysis", "Bayesian Models", "XGBoost", "Cognitive Function"],
       image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
     },
     {
-      title: "Social Functioning Interventions",
-      description: "Evaluating effectiveness of psychosocial interventions on social outcomes in schizophrenia",
-      tags: ["RCT", "Intervention Study", "Quality of Life"],
+      title: "PhD Thesis: Cannabinoids, Cognition & Psychosis",
+      description: "Multimodal investigation integrating neuroimaging, metabolite measures, and behavioural data to understand mechanisms underlying cannabinoid effects on cognition",
+      tags: ["Multimodal Integration", "HPC Pipelines", "Computational Modelling"],
       image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
     },
   ];
@@ -31,7 +31,7 @@ const Projects = () => {
           Research <span className="text-gradient">Projects</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16 text-lg">
-          Current and recent research in psychosis and related disorders
+          Current PhD research and ongoing projects at King's College London
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

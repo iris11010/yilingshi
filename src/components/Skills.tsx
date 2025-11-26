@@ -3,16 +3,16 @@ import { Badge } from "@/components/ui/badge";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Research Methods",
-      skills: ["Clinical Trials", "Statistical Analysis", "Literature Review", "Data Collection", "Case Studies"],
+      title: "Computational Modelling",
+      skills: ["Bayesian Models", "Machine Learning", "XGBoost", "SHAP", "Cross-validation"],
     },
     {
-      title: "Technical Skills",
-      skills: ["SPSS", "R", "Python", "Neuroimaging", "Psychometric Testing"],
+      title: "Neuroimaging & Analysis",
+      skills: ["FSL (FEAT, MELODIC)", "fMRI", "1H-MRS", "HPC Pipelines", "Multimodal Integration"],
     },
     {
-      title: "Areas of Expertise",
-      skills: ["Schizophrenia", "Bipolar Disorder", "Early Intervention", "Cognitive Assessment", "Treatment Outcomes"],
+      title: "Programming & Tools",
+      skills: ["Python", "R", "MATLAB", "Data Science", "Reproducible Workflows"],
     },
   ];
 
@@ -23,7 +23,7 @@ const Skills = () => {
           Skills & <span className="text-gradient">Expertise</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16 text-lg">
-          Research methodologies and areas of expertise in psychosis study
+          Technical expertise and methodological skills in psychiatric neuroimaging research
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
