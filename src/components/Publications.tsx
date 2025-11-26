@@ -1,81 +1,90 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, FileText } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Publications = () => {
   const articles = [
     {
-      title: "Cognitive Predictors of Functional Outcomes in First-Episode Psychosis: A Longitudinal Study",
-      authors: "Shi, Y., Johnson, M., & Smith, R.",
-      journal: "Schizophrenia Research",
+      title: "A single dose of cannabidiol modulates hippocampal glutamate–prefrontal coupling in individuals at clinical high risk of psychosis",
+      authors: "Shi, Y. et al.",
+      journal: "Under Revision",
+      year: "2025",
+      volume: "Preprint",
+      pages: "",
+      doi: "10.1101/2024.11.06.24316831",
+    },
+    {
+      title: "The effect of cannabinoids on cognition: A Bayesian meta-analysis",
+      authors: "Shi, Y. et al.",
+      journal: "In Preparation",
+      year: "2025",
+      volume: "",
+      pages: "",
+      doi: "",
+    },
+    {
+      title: "A systematic evidence map of the association between cannabis use and psychosis-related outcomes across the psychosis continuum: An umbrella review of systematic reviews and meta-analyses",
+      authors: "Groening, J., Shi, Y. et al.",
+      journal: "Psychiatry Research",
+      year: "2023",
+      volume: "330",
+      pages: "115626",
+      doi: "10.1016/j.psychres.2023.115626",
+    },
+    {
+      title: "Analysis of the Prediction of Adolescent Depressive Diseases and the Mediating Effect of Exercise Factors Based on Basic Census Data",
+      authors: "Li, Q., Shi, Y. et al.",
+      journal: "The Journal of Physical Activity & Health",
       year: "2024",
-      volume: "265",
-      pages: "123-134",
-      doi: "10.1016/j.schres.2024.01.001",
-    },
-    {
-      title: "Neural Correlates of Social Cognition Deficits in Schizophrenia: An fMRI Investigation",
-      authors: "Shi, Y., Chen, L., Davis, P., & Williams, K.",
-      journal: "Biological Psychiatry",
-      year: "2023",
-      volume: "94(8)",
-      pages: "645-656",
-      doi: "10.1016/j.biopsych.2023.05.012",
-    },
-    {
-      title: "Early Intervention in Psychosis: A Systematic Review of Cognitive Remediation Approaches",
-      authors: "Shi, Y., & Thompson, A.",
-      journal: "Journal of Clinical Psychology",
-      year: "2023",
-      volume: "79(3)",
-      pages: "456-478",
-      doi: "10.1002/jclp.23456",
+      volume: "3(3)",
+      pages: "65",
+      doi: "10.18122/ijpah.3.3.65.boisestate",
     },
   ];
 
   const presentations = [
     {
-      title: "Biomarkers of Treatment Response in Early Psychosis",
-      event: "Annual Meeting of the Society of Biological Psychiatry",
+      title: "Cannabinoid Effects on Cognition in Psychosis",
+      event: "Schizophrenia International Research Society",
       location: "Chicago, IL",
-      year: "2024",
-      type: "Oral Presentation",
+      year: "2025",
+      type: "Poster Presentation",
     },
     {
-      title: "Machine Learning Approaches to Predicting Psychosis Onset",
-      event: "International Congress on Schizophrenia Research",
-      location: "San Diego, CA",
+      title: "CBD and Hippocampal-Prefrontal Connectivity in Clinical High Risk",
+      event: "European College of Neuropsychopharmacology",
+      location: "Barcelona, Spain",
       year: "2023",
       type: "Poster Presentation",
     },
     {
-      title: "Social Functioning Interventions in Schizophrenia: Current Evidence",
-      event: "American Psychiatric Association Annual Meeting",
-      location: "New York, NY",
+      title: "Neuroimaging Mechanisms of Cannabinoid Effects",
+      event: "British Association of Psychopharmacology",
+      location: "Manchester, UK",
       year: "2023",
-      type: "Symposium Talk",
+      type: "Poster Presentation",
     },
   ];
 
   const achievements = [
     {
-      title: "Graduate Research Fellowship",
-      organization: "National Institute of Mental Health",
-      year: "2023-2026",
-      description: "Competitive fellowship supporting doctoral research in psychosis",
+      title: "King's–China Scholarship Council PhD Scholarship",
+      organization: "King's College London & China Scholarship Council",
+      year: "2021-2025",
+      description: "Full doctoral funding for research on cannabinoids and psychosis",
     },
     {
-      title: "Outstanding Student Research Award",
-      organization: "International Society for Psychological and Social Approaches to Psychosis",
-      year: "2023",
-      description: "Recognition for exceptional contributions to psychosis research",
+      title: "Early Career Travel Award",
+      organization: "Schizophrenia International Research Society",
+      year: "2025",
+      description: "Supporting presentation at SIRS conference in Chicago",
     },
     {
-      title: "Best Poster Award",
-      organization: "University Research Symposium",
-      year: "2022",
-      description: "First place for research on cognitive functioning in psychosis",
+      title: "Brain Charity Travel Award",
+      organization: "The Brain Charity",
+      year: "2023, 2025",
+      description: "Travel funding for international conference presentations",
     },
   ];
 
@@ -109,26 +118,25 @@ const Publications = () => {
                   {article.authors}
                 </p>
                 <p className="text-sm text-muted-foreground mb-4">
-                  <span className="italic">{article.journal}</span>, {article.year}, {article.volume}, {article.pages}
+                  <span className="italic">{article.journal}</span>, {article.year}
+                  {article.volume && `, ${article.volume}`}
+                  {article.pages && `, ${article.pages}`}
                 </p>
                 <div className="flex gap-3">
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="flex items-center gap-2"
-                    onClick={() => window.open(`https://doi.org/${article.doi}`, '_blank')}
-                  >
-                    <ExternalLink size={16} />
-                    DOI: {article.doi}
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="flex items-center gap-2"
-                  >
-                    <FileText size={16} />
-                    PDF
-                  </Button>
+                  {article.doi && (
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="flex items-center gap-2"
+                      onClick={() => window.open(`https://doi.org/${article.doi}`, '_blank')}
+                    >
+                      <ExternalLink size={16} />
+                      {article.doi.includes('10.1101') ? 'Preprint' : 'DOI'}
+                    </Button>
+                  )}
+                  {!article.doi && (
+                    <span className="text-sm text-muted-foreground italic">In Preparation</span>
+                  )}
                 </div>
               </Card>
             ))}

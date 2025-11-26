@@ -22,10 +22,10 @@ const Hero = () => {
           Hi, I'm <span className="text-gradient">Yiling Shi</span>
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          PhD Student in Psychosis Research
+          PhD Candidate in Psychiatry | King's College London
         </p>
         <p className="text-lg text-white/80 mb-12 max-w-xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          Advancing understanding of psychotic disorders through innovative research
+          Investigating mechanisms underlying cannabinoid effects on cognition in psychosis
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
           <Button 
