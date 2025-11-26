@@ -3,16 +3,16 @@ import { Badge } from "@/components/ui/badge";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
-      skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js"],
+      title: "Research Methods",
+      skills: ["Clinical Trials", "Statistical Analysis", "Literature Review", "Data Collection", "Case Studies"],
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "REST APIs"],
+      title: "Technical Skills",
+      skills: ["SPSS", "R", "Python", "Neuroimaging", "Psychometric Testing"],
     },
     {
-      title: "Tools & Others",
-      skills: ["Git", "Docker", "AWS", "Figma", "Agile"],
+      title: "Areas of Expertise",
+      skills: ["Schizophrenia", "Bipolar Disorder", "Early Intervention", "Cognitive Assessment", "Treatment Outcomes"],
     },
   ];
 
@@ -23,7 +23,7 @@ const Skills = () => {
           Skills & <span className="text-gradient">Expertise</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16 text-lg">
-          Technologies and tools I work with to bring projects to life
+          Research methodologies and areas of expertise in psychosis study
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
