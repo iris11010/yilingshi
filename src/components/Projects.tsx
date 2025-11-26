@@ -9,6 +9,7 @@ const Projects = () => {
       description: "Published research investigating how a single dose of CBD modulates the relationship between hippocampal glutamate and learning-related prefrontal activation in individuals at clinical high risk of psychosis",
       tags: ["fMRI", "1H-MRS", "Clinical High Risk", "Published 2025"],
       image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+      publicationUrl: "https://doi.org/10.1016/j.pscychresns.2025.112095",
     },
     {
       title: "Bayesian Meta-Analysis of Cannabinoid Effects on Cognition",
@@ -62,14 +63,19 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button size="sm" variant="outline" className="flex items-center gap-2">
-                    <ExternalLink size={16} />
-                    Publication
-                  </Button>
-                  <Button size="sm" variant="outline" className="flex items-center gap-2">
-                    <ExternalLink size={16} />
-                    Details
-                  </Button>
+                  {project.publicationUrl && (
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="flex items-center gap-2"
+                      asChild
+                    >
+                      <a href={project.publicationUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink size={16} />
+                        Publication
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </Card>
