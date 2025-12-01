@@ -40,13 +40,14 @@ const Projects = () => {
       title: "Bayesian Meta-Analysis of Cannabinoid Effects on Cognition",
       description: "Comprehensive meta-analysis across 45 THC and 17 CBD RCTs using Bayesian hierarchical models and machine learning to identify moderators of cognitive effects",
       tags: ["Meta-Analysis", "Bayesian Models", "XGBoost", "Cognitive Function"],
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+      image: "/posters/cbd-poster.jpg",
+      posterUrl: "/posters/cbd-poster.jpg",
     },
     {
       title: "PhD Thesis: Cannabinoids, Cognition & Psychosis",
       description: "Multimodal investigation integrating neuroimaging, metabolite measures, and behavioural data to understand mechanisms underlying cannabinoid effects on cognition",
       tags: ["Multimodal Integration", "HPC Pipelines", "Computational Modelling"],
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",#
     },
   ];
 
