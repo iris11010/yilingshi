@@ -34,7 +34,7 @@ const Projects = () => {
       tags: ["fMRI", "1H-MRS", "Clinical High Risk", "Published 2025"],
       image: "/posters/cbd-poster.jpg",
       publicationUrl: "https://doi.org/10.1016/j.pscychresns.2025.112095",
-      posterUrl: "/posters/poster-2.pdf",
+      posterUrl: "/posters/cbd-poster.jpg",
     },
     {
       title: "Bayesian Meta-Analysis of Cannabinoid Effects on Cognition",
