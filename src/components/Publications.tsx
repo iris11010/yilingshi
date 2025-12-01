@@ -13,6 +13,7 @@ const Publications = () => {
       volume: "In Press",
       pages: "112095",
       doi: "10.1016/j.pscychresns.2025.112095",
+      posterUrl: "/posters/cbd-hippocampal-prefrontal-poster.pdf",
     },
     {
       title: "The effect of cannabinoids on cognition: A Bayesian meta-analysis",
@@ -132,6 +133,17 @@ const Publications = () => {
                     >
                       <ExternalLink size={16} />
                       {article.volume === "In Press" ? 'View Article' : 'DOI'}
+                    </Button>
+                  )}
+                  {article.posterUrl && (
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="flex items-center gap-2"
+                      onClick={() => window.open(article.posterUrl, '_blank')}
+                    >
+                      <ExternalLink size={16} />
+                      Poster
                     </Button>
                   )}
                   {!article.doi && (
