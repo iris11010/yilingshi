@@ -32,7 +32,7 @@ const Projects = () => {
       title: "Cannabidiol and Hippocampal-Prefrontal Coupling in Psychosis",
       description: "Published research investigating how a single dose of CBD modulates the relationship between hippocampal glutamate and learning-related prefrontal activation in individuals at clinical high risk of psychosis",
       tags: ["fMRI", "1H-MRS", "Clinical High Risk", "Published 2025"],
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+      image: "/posters/cbd-poster.jpg",
       publicationUrl: "https://doi.org/10.1016/j.pscychresns.2025.112095",
       posterUrl: "/posters/poster-2.pdf",
     },
