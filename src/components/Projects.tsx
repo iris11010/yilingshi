@@ -34,6 +34,7 @@ const Projects = () => {
       tags: ["fMRI", "1H-MRS", "Clinical High Risk", "Published 2025"],
       image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
       publicationUrl: "https://doi.org/10.1016/j.pscychresns.2025.112095",
+      posterUrl: "/posters/cbd-hippocampal-prefrontal-poster.pdf",
     },
     {
       title: "Bayesian Meta-Analysis of Cannabinoid Effects on Cognition",
@@ -136,6 +137,19 @@ const Projects = () => {
                       <a href={project.publicationUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink size={16} />
                         Publication
+                      </a>
+                    </Button>
+                  )}
+                  {project.posterUrl && (
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="flex items-center gap-2"
+                      asChild
+                    >
+                      <a href={project.posterUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink size={16} />
+                        Poster
                       </a>
                     </Button>
                   )}
