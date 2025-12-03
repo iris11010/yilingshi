@@ -106,34 +106,6 @@ const Education = () => {
           ))}
         </div>
 
-        {/* Teaching & Clinical Experience */}
-        <div className="max-w-4xl mx-auto mt-12">
-          <h3 className="text-2xl font-semibold mb-6 text-center">
-            Teaching & Clinical Experience
-          </h3>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="p-6 bg-card border-border">
-              <h4 className="text-lg font-semibold mb-2">Graduate Teaching Assistant</h4>
-              <p className="text-muted-foreground text-sm mb-2">
-                King's College London • 2022-2023
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Delivered research methods teaching sessions under academic supervision
-              </p>
-            </Card>
-            
-            <Card className="p-6 bg-card border-border">
-              <h4 className="text-lg font-semibold mb-2">MSc Dissertation Supervisor</h4>
-              <p className="text-muted-foreground text-sm mb-2">
-                King's College London • 2021-Present
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Supervising MSc projects on research design, analysis, and scientific writing
-              </p>
-            </Card>
-          </div>
-        </div>
       </div>
     </section>
   );

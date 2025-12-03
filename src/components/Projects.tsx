@@ -8,7 +8,6 @@ const Projects = () => {
       title: "CANTRIPS Study - Recruiting Participants Now!",
       description: "Longitudinal study investigating the relationship between cannabis use 🍃 and subclinical psychotic symptoms 👀 as well as the cognitive mechanisms 🧠 that may underlie this association (e.g. predictive processing, memory). Includes online survey and optional follow-up interview.",
       tags: ["Recruitment Active", "Longitudinal", "Cannabis", "Cognition", "Psychosis"],
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
       featured: true,
       links: {
         website: "https://lnkd.in/eB4zfxsM",
@@ -40,14 +39,21 @@ const Projects = () => {
       title: "Bayesian Meta-Analysis of Cannabinoid Effects on Cognition",
       description: "Comprehensive meta-analysis across 45 THC and 17 CBD RCTs using Bayesian hierarchical models and machine learning to identify moderators of cognitive effects",
       tags: ["Meta-Analysis", "Bayesian Models", "XGBoost", "Cognitive Function"],
-      image: "/posters/cbd-poster.jpg",
-      posterUrl: "/posters/cbd-poster.jpg",
+      image: "/posters/CAncog_SIRS_MAR25_page-0001.jpg",
+      posterUrl: "/posters/CAncog_SIRS_MAR25_page-0001.jpg",
+    },
+    {
+      title: "The Effect of Δ9-THC on Encoding and Recall Memory Processing: An fMRI-MRS Study",
+      description:
+        "Double-blind, randomized, placebo-controlled, crossover study in 16 healthy participants examining how intravenously administered Δ9-THC modulates verbal learning–related brain activation (fMRI) and hippocampal glutamate levels (1H-MRS). This project focuses on linking THC-induced changes in glutamate with altered encoding and recall processes and acute psychotomimetic effects.",
+      tags: ["fMRI", "1H-MRS", "THC", "Memory Encoding & Recall", "Placebo-Controlled Crossover"],
+      image: "/posters/CANDOWN.png",
     },
     {
       title: "PhD Thesis: Cannabinoids, Cognition & Psychosis",
       description: "Multimodal investigation integrating neuroimaging, metabolite measures, and behavioural data to understand mechanisms underlying cannabinoid effects on cognition",
       tags: ["Multimodal Integration", "HPC Pipelines", "Computational Modelling"],
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+      image: "/posters/thesis_face.png",
     },
   ];
 
@@ -68,6 +74,7 @@ const Projects = () => {
               className={`overflow-hidden card-hover bg-card border-border ${project.featured ? 'lg:col-span-2' : ''}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
+              {project.image && (
               <div className="aspect-video overflow-hidden">
                 <img 
                   src={project.image} 
@@ -75,6 +82,7 @@ const Projects = () => {
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
+              )}
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
