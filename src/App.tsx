@@ -14,7 +14,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/yilingshi">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/skills/:skillId" element={<SkillDetail />} />
