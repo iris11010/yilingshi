@@ -47,7 +47,7 @@ const Projects = () => {
       title: "PhD Thesis: Cannabinoids, Cognition & Psychosis",
       description: "Multimodal investigation integrating neuroimaging, metabolite measures, and behavioural data to understand mechanisms underlying cannabinoid effects on cognition",
       tags: ["Multimodal Integration", "HPC Pipelines", "Computational Modelling"],
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",#
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
     },
   ];
 
