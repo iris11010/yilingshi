@@ -100,7 +100,7 @@ const SkillDetail = () => {
                   </p>
                   <div className="border border-border rounded-lg overflow-hidden bg-muted/40">
                     <img
-                      src="/posters/Yiling_Shi_FSL.jpg"
+                      src="posters/Yiling_Shi_FSL.jpg"
                       alt="FSL Course 2023 certificate"
                       className="w-full h-auto object-contain"
                     />
