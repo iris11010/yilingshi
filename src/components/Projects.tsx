@@ -31,29 +31,29 @@ const Projects = () => {
       title: "Cannabidiol and Hippocampal-Prefrontal Coupling in Psychosis",
       description: "Published research investigating how a single dose of CBD modulates the relationship between hippocampal glutamate and learning-related prefrontal activation in individuals at clinical high risk of psychosis",
       tags: ["fMRI", "1H-MRS", "Clinical High Risk", "Published 2025"],
-      image: "/posters/cbd-poster.jpg",
+      image: "posters/cbd-poster.jpg",
       publicationUrl: "https://doi.org/10.1016/j.pscychresns.2025.112095",
-      posterUrl: "/posters/cbd-poster.jpg",
+      posterUrl: "posters/cbd-poster.jpg",
     },
     {
       title: "Bayesian Meta-Analysis of Cannabinoid Effects on Cognition",
       description: "Comprehensive meta-analysis across 45 THC and 17 CBD RCTs using Bayesian hierarchical models and machine learning to identify moderators of cognitive effects",
       tags: ["Meta-Analysis", "Bayesian Models", "XGBoost", "Cognitive Function"],
-      image: "/posters/CAncog_SIRS_MAR25_page-0001.jpg",
-      posterUrl: "/posters/CAncog_SIRS_MAR25_page-0001.jpg",
+      image: "posters/CAncog_SIRS_MAR25_page-0001.jpg",
+      posterUrl: "posters/CAncog_SIRS_MAR25_page-0001.jpg",
     },
     {
       title: "The Effect of Δ9-THC on Encoding and Recall Memory Processing: An fMRI-MRS Study",
       description:
         "Double-blind, randomized, placebo-controlled, crossover study in 16 healthy participants examining how intravenously administered Δ9-THC modulates verbal learning–related brain activation (fMRI) and hippocampal glutamate levels (1H-MRS). This project focuses on linking THC-induced changes in glutamate with altered encoding and recall processes and acute psychotomimetic effects.",
       tags: ["fMRI", "1H-MRS", "THC", "Memory Encoding & Recall", "Placebo-Controlled Crossover"],
-      image: "/posters/CANDOWN.png",
+      image: "posters/CANDOWN.png",
     },
     {
       title: "PhD Thesis: Cannabinoids, Cognition & Psychosis",
       description: "Multimodal investigation integrating neuroimaging, metabolite measures, and behavioural data to understand mechanisms underlying cannabinoid effects on cognition",
       tags: ["Multimodal Integration", "HPC Pipelines", "Computational Modelling"],
-      image: "/posters/thesis_face.png",
+      image: "posters/thesis_face.png",
     },
   ];
 
