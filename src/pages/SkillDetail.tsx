@@ -80,7 +80,7 @@ const SkillDetail = () => {
                   </p>
                   <div className="border border-border rounded-lg overflow-hidden bg-muted/40">
                     <img
-                      src="/posters/GCP Certificate_Yiling Shi_2.jpg"
+                      src="posters/GCP Certificate_Yiling Shi_2.jpg"
                       alt="Good Clinical Practice (CTIMP) training certificate"
                       className="w-full h-auto object-contain"
                     />
